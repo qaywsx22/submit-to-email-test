@@ -39,25 +39,32 @@
   </nav>
   <div class="uk-section">
     <div class="uk-container">
-      <form id="contactForm" action="#" method="POST" enctype="multipart/form-data">
+      <form id="contactForm" action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="apiKey" value="sf_c4ck284j1bgd8g7gj6ld5906">
+        <!-- Enable reply-to functionality -->
+        <input type="hidden" name="replyTo" value="@">
+
+        <!-- Anti-spam honeypot field -->
+        <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off">
+
         <fieldset class="uk-fieldset uk-grid-small" uk-grid>
 
           <legend class="uk-legend">Dienstleistungen anfordern</legend>
 
           <div class="uk-margin uk-width-1-1">
-            <input type="text" class="uk-input" maxlength="10" required="" placeholder="Name" id="kuname">
+            <input type="text" class="uk-input" maxlength="10" required="" placeholder="Name" name="kuname" id="kuname">
           </div>
 
           <div class="uk-margin uk-width-1-1">
-            <input type="text" class="uk-input" required="" placeholder="Telefon" id="kuphone">
+            <input type="text" class="uk-input" required="" placeholder="Telefon" name="kuphone" id="kuphone">
           </div>
 
           <div class="uk-margin uk-width-1-1">
-            <input type="email" class="uk-input" required="" placeholder="E-Mail" id="kuemail">
+            <input type="email" class="uk-input" required="" placeholder="E-Mail" name="kuname" id="kuemail">
           </div>
 
           <div class="uk-margin uk-width-1-2@s">
-            <select name="timings" id="kutimings" class="uk-select">
+            <select name="kutimings" id="kutimings" class="uk-select">
               <option value="7:00">7:00</option>
               <option value="7:30">7:30</option>
               <option value="7:60">7:60</option>
@@ -106,11 +113,11 @@
           </div>
 
           <div class="uk-margin uk-width-1-2@s">
-            <input type="date" class="uk-input" required="" placeholder="Datum" id="kudate" min="2025-08-14">
+            <input type="date" class="uk-input" required="" placeholder="Datum" name="kudate" id="kudate" min="2025-08-14">
           </div>
 
           <div class="uk-margin uk-width-1-1">
-            <textarea class="uk-textarea" id="kutext"></textarea>
+            <textarea class="uk-textarea" nam="kutext" id="kutext"></textarea>
           </div>
 
         </fieldset>
@@ -122,6 +129,7 @@
       </form>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 </body>
+
 </html>
