@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test for submit to email</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/uikit.css" />
+  <script src="js/uikit.js"></script>
+  <script src="js/uikit-icons.js"></script>
+</head>
+
+<body>
+  <nav class="uk-navbar-container">
+    <div class="uk-container">
+      <div uk-navbar>
+
+        <div class="uk-navbar-left">
+
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li>
+              <a href="#">Parent</a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Item</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="uk-section">
+    <div class="uk-container">
+      <form id="contactForm" action="#" method="POST" enctype="multipart/form-data">
+        <fieldset class="uk-fieldset uk-grid-small" uk-grid>
+
+          <legend class="uk-legend">Dienstleistungen anfordern</legend>
+
+          <div class="uk-margin uk-width-1-1">
+            <input type="text" class="uk-input" maxlength="10" required="" placeholder="Name" id="kuname">
+          </div>
+
+          <div class="uk-margin uk-width-1-1">
+            <input type="text" class="uk-input" required="" placeholder="Telefon" id="kuphone">
+          </div>
+
+          <div class="uk-margin uk-width-1-1">
+            <input type="email" class="uk-input" required="" placeholder="E-Mail" id="kuemail">
+          </div>
+
+          <div class="uk-margin uk-width-1-2@s">
+            <select name="timings" id="kutimings" class="uk-select">
+              <option value="7:00">7:00</option>
+              <option value="7:30">7:30</option>
+              <option value="7:60">7:60</option>
+              <option value="7:90">7:90</option>
+              <option value="8:20">8:20</option>
+              <option value="8:50">8:50</option>
+              <option value="8:80">8:80</option>
+              <option value="9:10">9:10</option>
+              <option value="9:40">9:40</option>
+              <option value="9:70">9:70</option>
+              <option value="10:00">10:00</option>
+              <option value="10:30">10:30</option>
+              <option value="10:60">10:60</option>
+              <option value="10:90">10:90</option>
+              <option value="11:20">11:20</option>
+              <option value="11:50">11:50</option>
+              <option value="11:80">11:80</option>
+              <option value="12:10">12:10</option>
+              <option value="12:40">12:40</option>
+              <option value="12:70">12:70</option>
+              <option value="13:00">13:00</option>
+              <option value="13:30">13:30</option>
+              <option value="13:60">13:60</option>
+              <option value="13:90">13:90</option>
+              <option value="14:20">14:20</option>
+              <option value="14:50">14:50</option>
+              <option value="14:80">14:80</option>
+              <option value="15:10">15:10</option>
+              <option value="15:40">15:40</option>
+              <option value="15:70">15:70</option>
+              <option value="16:00">16:00</option>
+              <option value="16:30">16:30</option>
+              <option value="16:60">16:60</option>
+              <option value="16:90">16:90</option>
+              <option value="17:20">17:20</option>
+              <option value="17:50">17:50</option>
+              <option value="17:80">17:80</option>
+              <option value="18:10">18:10</option>
+              <option value="18:40">18:40</option>
+              <option value="18:70">18:70</option>
+              <option value="19:00">19:00</option>
+              <option value="19:30">19:30</option>
+              <option value="19:60">19:60</option>
+              <option value="19:90">19:90</option>
+            </select>
+          </div>
+
+          <div class="uk-margin uk-width-1-2@s">
+            <input type="date" class="uk-input" required="" placeholder="Datum" id="kudate" min="2025-08-14">
+          </div>
+
+          <div class="uk-margin uk-width-1-1">
+            <textarea class="uk-textarea" id="kutext"></textarea>
+          </div>
+
+        </fieldset>
+
+        <button class="uk-button uk-button-primary" id="submitButton" type="submit">
+          Anfordern
+        </button>
+
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
